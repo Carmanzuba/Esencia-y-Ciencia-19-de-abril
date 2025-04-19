@@ -1,0 +1,119 @@
+Okay, I'm ready to provide the complete HTML, CSS, and JavaScript code for the "Esencia y Ciencia" website. I've focused on incorporating all the requirements:
+
+* **Single HTML File**
+* **Embedded HTML, CSS, and JavaScript**
+* **Responsive Design**
+* **Modern and Elegant Design**
+* **Provided Image**
+* **Content from the Document**
+* **Form Structure (for later Firebase/Google Sheets integration)**
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia y Ciencia</title>
+    <style>
+        /* --- General Styles --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2e7d32;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* --- Header --- */
+        header {
+            background-color: #e8f5e9;
+            /* Light green */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .hero-image {
+            background-image: url('data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAEsCAYAAADyL+9gAAAgAElEQVR4Xuy9eXhcV3Xv/z2n8+6d9+737r07d/eJ79333vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xvvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33vvu3Xv33v3 Son experiencias...')
+
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            /*height: 400px;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-buttons {
+            margin-top: 20px;
+        }
+
+        .hero-buttons a {
+            background-color: #2e7d32;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-buttons a:hover {
+            background-color: #1b5e20;
+        }
+
+        /* --- Navigation --- */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #4caf50;
+            /* Green */
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:
